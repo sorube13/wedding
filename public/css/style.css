@@ -1,0 +1,32 @@
+body {
+  background-image: url('../images/parchmin.jpg');
+}
+ul.navbar-nav:not(.language) {
+  width: 85%;
+  margin-left: 5em;
+}
+
+ul.navbar-nav:not(.language) li {
+  text-align: center;
+  width: 14em;
+} 
+
+.body-content{
+  margin-top: 50px;
+}
+
+.body-content div {
+  margin: 150px 25px;
+  text-align: center;
+}
+
+/* #map {
+  width: 90%;
+  height: 500px;
+  background-color: grey;
+}
+ */
+
+.lang {
+  width: 1.5em;
+}
