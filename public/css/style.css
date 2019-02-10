@@ -1,5 +1,6 @@
 body {
-  background-image: url('../images/parchmin.jpg');
+  background-image: url('../images/andy.jpg');
+  background-size: 100% 100%;
 }
 ul.navbar-nav:not(.language) {
   width: 85%;
@@ -10,6 +11,11 @@ ul.navbar-nav:not(.language) li {
   text-align: center;
   width: 14em;
 } 
+
+ul.language {
+  margin-right: -1em;
+  margin-top: -6em;
+}
 
 .body-content{
   margin-top: 50px;
@@ -29,4 +35,24 @@ ul.navbar-nav:not(.language) li {
 
 .lang {
   width: 1.5em;
+}
+
+.header-disney {
+  background-color: rgba(0,0,0,.25);
+  /*background-image: url('../images/andyjpg');*/
+  /*background-size: 100% 150%;*/
+  /*height: 10em;*/
+  border: none;
+}
+
+.header-disney .container-fluid {
+  margin-top: 6em;
+}
+
+.header-disney a {
+  text-shadow: 2px 2px #513D3D;
+  color: white !important;
+  letter-spacing: 0.5em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
