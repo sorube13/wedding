@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    height: 4em;
+    background: black;
+    align-items: center;
+
+    
+
+   
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-family: 'GreatVibesRegular';
+    font-weight: normal;
+    font-style: normal; 
+    font-size:1.5em;
+}
+
+.header img {
+    margin-top: 5em;
+    border: 10px solid #b000cb;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
