@@ -1,10 +1,9 @@
 .header {
     display: flex;
-    justify-content: space-around;
-    padding-left: 20%;
-    padding-right: 20%;
-    height: 4em;
-    background: black;
+    justify-content: space-evenly;
+    /* padding-left: 20%;
+    padding-right: 20%; */
+    height: 11em;
     align-items: center;
 
     
@@ -15,15 +14,14 @@
 .header a {
     color: white;
     text-decoration: none;
-    font-family: 'GreatVibesRegular';
+    font-family: 'Great Vibes', cursive;
     font-weight: normal;
     font-style: normal; 
-    font-size:1.5em;
+    font-size:2em;
 }
 
 .header img {
-    margin-top: 5em;
-    border: 10px solid #b000cb;
+    border: 1px solid white;
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
