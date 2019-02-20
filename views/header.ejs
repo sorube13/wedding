@@ -1,11 +1,39 @@
-<link href="/stylesheets/header.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-
 <nav class='header'>
+    <div class='menu-web'>
+        <a id="lnkHome" <% if (content.page_name==='intro' ) { %>class="selected"
+            <% } %> href="/">Bienvenido</a>
+        <a id="lnkLoc" <% if (content.page_name==='place' ) { %>class="selected"
+            <% } %> href="/place">La Celebración</a>
+        <img src="images/logo.png" alt="Logo" height="100" width="100">
+        <a id="lnkInfo" <% if (content.page_name==='moreInfo' ) { %>class="selected"
+            <% } %> href="/moreInfo">Información Práctica</a>
+        <a id="lnkGifts" <% if (content.page_name==='gifts' ) { %>class="selected"
+            <% } %> href="/gifts">Regalitos</a>
+    </div>
+    <div class='menu-mobile'>
+        <div class='logo'>
+            <img src="images/logo.png" alt="Logo" height="100" width="100">
+        </div>
+        <div id='js-menu' class='menu-mobile-options'>
+            <a id="lnkHome" <% if (content.page_name==='intro' ) { %>class="selected"
+                <% } %> href="/">Bienvenido</a>
+            <a id="lnkLoc" <% if (content.page_name==='place' ) { %>class="selected"
+                <% } %> href="/place">La Celebración</a>
+            <a id="lnkInfo" <% if (content.page_name==='moreInfo' ) { %>class="selected"
+                <% } %> href="/moreInfo">Información Práctica</a>
+            <a id="lnkGifts" <% if (content.page_name==='gifts' ) { %>class="selected"
+                <% } %> href="/gifts">Regalitos</a>
+        </div>
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="material-icons">menu</i>
+        </span>
+    </div>
 
-    <a id="lnkHome" href="/">Bienvenido</a>
-    <a id="lnkLoc" href="/place">La Celebración</a>
-    <img src="images/logo.png" alt="Logo" height="100" width="100">
-    <a id="lnkInfo" href="/moreInfo">Información Práctica</a>
-    <a id="lnkGifts" href="/gifts">Regalitos</a>
 </nav>
+<script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function () {
+        mainNav.classList.toggle('active');
+    });
+</script>

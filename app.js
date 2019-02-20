@@ -56,19 +56,11 @@ app.use(function (err, req, res, next) {
 })
 
 function handleRedirect (req, res, next) {
-  console.log('Host: ' + req.headers ? req.headers.host : 'No hosts')
   if (
     req.headers &&
     req.headers.host &&
     req.headers.host.match(/^www/) !== null
   ) {
-    console.log(
-      'Redirect URL' +
-        req.protocol +
-        '://' +
-        req.headers.host.replace(/^www\./, '') +
-        req.url
-    )
     res.redirect(
       req.protocol + '://' + req.headers.host.replace(/^www\./, '') + req.url
     )
