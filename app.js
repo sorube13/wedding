@@ -12,6 +12,8 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.all('/*', handleRedirect);
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -52,5 +54,13 @@ app.use(function (err, req, res, next) {
     });
 });
 
+
+function handleRedirect(req, res, next) {
+    if (req.headers && req.headers.host && req.headers.host.match(/^www/) !== null) {
+        res.redirect(req.protocol + '://' + req.headers.host.replace(/^www\./, '') + req.url);
+    } else {
+        next();
+    }
+}
 
 module.exports = app;
