@@ -1,14 +1,18 @@
 <nav class='header'>
     <div class='menu-web'>
-        <a id="lnkHome" <% if (content.page_name==='intro' ) { %>class="selected"
-            <% } %> href="/">Bienvenido</a>
-        <a id="lnkLoc" <% if (content.page_name==='place' ) { %>class="selected"
-            <% } %> href="/place">La Celebración</a>
+        <a id="lnkHome" <% if (page_name==='intro' ) { %>class="selected"
+            <% } %> href="/">
+            <%=i18n.__('titleIntro')%></a></a>
+        <a id="lnkLoc" <% if (page_name==='place' ) { %>class="selected"
+            <% } %> href="/place">
+            <%=i18n.__('titlePlace')%></a></a>
         <img src="images/logo.png" alt="Logo" height="100" width="100">
-        <a id="lnkInfo" <% if (content.page_name==='moreInfo' ) { %>class="selected"
-            <% } %> href="/moreInfo">Información Práctica</a>
-        <a id="lnkGifts" <% if (content.page_name==='gifts' ) { %>class="selected"
-            <% } %> href="/gifts">Regalitos</a>
+        <a id="lnkInfo" <% if (page_name==='moreInfo' ) { %>class="selected"
+            <% } %> href="/moreInfo">
+            <%=i18n.__('titleMoreInfo')%></a></a>
+        <a id="lnkGifts" <% if (page_name==='gifts' ) { %>class="selected"
+            <% } %> href="/gifts">
+            <%=i18n.__('titleGifts')%></a></a>
     </div>
     <div class='menu-mobile'>
         <div class='logo'>
@@ -16,29 +20,40 @@
         </div>
         <div class='menu-title'>
             <h1>
-                <%=content.page_title%>
+                <%=page_title%>
             </h1>
         </div>
         <div id='js-menu' class='menu-mobile-options'>
-            <a id="lnkHome" <% if (content.page_name==='intro' ) { %>class="selected"
-                <% } %> href="/">Bienvenido</a>
-            <a id="lnkLoc" <% if (content.page_name==='place' ) { %>class="selected"
-                <% } %> href="/place">La Celebración</a>
-            <a id="lnkInfo" <% if (content.page_name==='moreInfo' ) { %>class="selected"
-                <% } %> href="/moreInfo">Información Práctica</a>
-            <a id="lnkGifts" <% if (content.page_name==='gifts' ) { %>class="selected"
-                <% } %> href="/gifts">Regalitos</a>
+            <a id="lnkHome" <% if (page_name==='intro' ) { %>class="selected"
+                <% } %> href="/">
+                <%=i18n.__('titleIntro')%></a>
+            <a id="lnkLoc" <% if (page_name==='place' ) { %>class="selected"
+                <% } %> href="/place">
+                <%=i18n.__('titlePlace')%></a>
+            <a id="lnkInfo" <% if (page_name==='moreInfo' ) { %>class="selected"
+                <% } %> href="/moreInfo">
+                <%=i18n.__('titleMoreInfo')%></a>
+            <a id="lnkGifts" <% if (page_name==='gifts' ) { %>class="selected"
+                <% } %> href="/gifts">
+                <%=i18n.__('titleGifts')%></a>
         </div>
         <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="material-icons">menu</i>
         </span>
     </div>
+    <div class='lang' id='choose-lang'>
+        <a href='/es'><img src="images/es.png" alt="es"></a>
+        <a href='/fr'><img src="images/fr.png" alt="fr"></a>
+        <a href='/en'><img src="images/en.png" alt='en'></a>
+    </div>
 
 </nav>
 <script>
     let mainNav = document.getElementById('js-menu');
+    let langMenu = document.getElementById('choose-lang');
     let navBarToggle = document.getElementById('js-navbar-toggle');
     navBarToggle.addEventListener('click', function () {
         mainNav.classList.toggle('active');
+        langMenu.classList.toggle('active');
     });
 </script>

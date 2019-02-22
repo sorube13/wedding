@@ -74,7 +74,7 @@
     }
 
     .navbar-toggle i {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     .menu-mobile-options.active ~ .navbar-toggle {
@@ -89,5 +89,24 @@
         font-size: 2.5em;
         letter-spacing: 0.08em;
         padding-top: 0.5em;
+    }
+
+    .lang:not(.active) {
+        display:none;
+    }
+
+
+    .lang.active {
+        position: absolute;
+        top: 94vh;
+        right: 1em;
+    }
+
+    .lang a {
+        padding: 0.6em;     
+    }
+
+    .lang img {
+        width: 1.5em;
     }
 }

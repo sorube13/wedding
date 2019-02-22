@@ -31,4 +31,20 @@
         -webkit-border-radius: 500px;
         -moz-border-radius: 500px;
     }
+
+    .lang { 
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 3vh;
+        display: block;
+    }
+
+    .lang a {
+        padding: 0.6em;     
+    }
+
+    .lang img {
+        width: 1.5em;
+    }
 }
