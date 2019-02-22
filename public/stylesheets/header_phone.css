@@ -65,7 +65,7 @@
     }
 
     .navbar-toggle {
-        position: fixed;
+        position: absolute;
         top: 10px;
         right: 20px;
         cursor: pointer; 
@@ -73,7 +73,21 @@
         font-size: 24px;
     }
 
+    .navbar-toggle i {
+        font-size: 2.5em;
+    }
+
     .menu-mobile-options.active ~ .navbar-toggle {
         color: black;
+        position: fixed;
+    }
+
+    .menu-mobile .menu-title h1{
+        text-align: center;
+        color: white;
+        font-family: 'Great Vibes', cursive;
+        font-size: 2.5em;
+        letter-spacing: 0.08em;
+        padding-top: 0.5em;
     }
 }

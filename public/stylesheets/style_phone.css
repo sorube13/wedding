@@ -6,6 +6,7 @@
         background-image: url('../images/castle.jpg');
         background-size: cover;
         overflow-x: hidden;
+        font-family: 'Raleway', sans-serif;
     }
     .layer {
         background-image: linear-gradient(to bottom, #0f005d, #f041b6);
@@ -21,6 +22,7 @@
         margin: 3em 3em;
         color: white;
         text-align: justify; 
+        line-height: 1.5em;
     }
     
 }
