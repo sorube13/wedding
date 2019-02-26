@@ -51,7 +51,7 @@
         right: 0;     
         bottom: 0;   
         background: white;        
-        height: auto;        
+        height: 100vh;        
         padding-top: 15vh;        
         width: 75vw;
         box-shadow: -5px 0px 10px black;
@@ -98,7 +98,7 @@
 
     .lang.active {
         position: fixed;
-        top: 94vh;
+        bottom: 1em;
         right: 1em;
     }
 
