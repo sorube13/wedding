@@ -42,9 +42,12 @@
         </span>
     </div>
     <div class='lang' id='choose-lang'>
-        <a href='/es'><img src="images/es.png" alt="es"></a>
-        <a href='/fr'><img src="images/fr.png" alt="fr"></a>
-        <a href='/en'><img src="images/en.png" alt='en'></a>
+        <% if (i18n.getLocale()!=='es') { %><a href='/es'><img src="images/es.png" alt="es"></a>
+        <% }%>
+        <% if (i18n.getLocale()!=='fr') { %><a href='/fr'><img src="images/fr.png" alt="fr"></a>
+        <% }%>
+        <% if (i18n.getLocale()!=='en') { %><a href='/en'><img src="images/en.png" alt='en'></a>
+        <% }%>
     </div>
 
 </nav>
