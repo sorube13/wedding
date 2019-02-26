@@ -3,19 +3,22 @@
     body {
         /* The file size of this background image is 93% smaller
            to improve page load speed on mobile internet connections */
-        background-image: url('../images/castle.jpg');
-        background-size: cover;
+       
         overflow-x: hidden;
         font-family: 'Raleway', sans-serif;
     }
     .layer {
-        background-image: linear-gradient(to bottom, #0f005d, #f041b6);
-        opacity: 0.8;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: auto;
+        background: -moz-linear-gradient(top, rgba(16, 0, 93, 0.973) 0%, rgba(240, 65, 182, 0.85) 100%), url('../images/castle.jpg') no-repeat;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(16, 0, 93, 0.973)), color-stop(100%, rgba(240, 65, 182, 0.85))), url('../images/castle.jpg') no-repeat;
+        background: -webkit-linear-gradient(top, rgba(16, 0, 93, 0.973) 0%, rgba(240, 65, 182, 0.85) 100%), url('../images/castle.jpg') no-repeat;
+        background: -o-linear-gradient(top, rgba(16, 0, 93, 0.973) 0%, rgba(240, 65, 182, 0.85) 100%), url('../images/castle.jpg') no-repeat;
+        background: -ms-linear-gradient(top, rgba(16, 0, 93, 0.973) 0%, rgba(240, 65, 182, 0.85) 100%), url('../images/castle.jpg') no-repeat;
+        background: linear-gradient(to bottom, #0f005de6, #f041b6e6 60%), url('../images/castle2.jpg') no-repeat;
     }
 
     .body-content{
