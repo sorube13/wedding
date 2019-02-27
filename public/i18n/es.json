@@ -1,10 +1,18 @@
 {
-	"titleIntro": "Bienvenido",
-	"titlePlace": "La Celebración",
-	"titleMoreInfo": "Más Información",
-	"titleGifts": "Lista de Boda",
-	"Welcome": "Hola, bienvenido a mi página",
-	"Language": "Por favor, elige un idioma",
-	"Contact Information": "1 Elf rd, Mi CASA, Earth",
-	"titleHeader": "titleHeader"
+    "titleIntro": "Bienvenido",
+    "titlePlace": "La Celebración",
+    "titleMoreInfo": "Más Información",
+    "titleGifts": "Lista de Boda",
+    "Welcome": "Hola, bienvenido a mi página",
+    "Language": "Por favor, elige un idioma",
+    "Contact Information": "1 Elf rd, Mi CASA, Earth",
+    "titleHeader": "titleHeader",
+    "intro_p1": " ¡Bienvenidos a la web de nuestra boda! Aquí podrás encontrar información de interés para los invitados, desde sitio y hora de la celebración hasta cómo llegar u hoteles cercanos. Echa un vistazo a todas las secciones para enterarte de todos los detalles y mantenerte informado.",
+    "intro_p2": " Aparte de comunicar cambios y/o nuevas informaciones por otros canales (véase teléfono, WhatsApp, mail, en persona...) iremos actualizando la web para tener toda la información recogida en el mismo sitio y de fácil acceso. Si tienes cualquier pregunta o comentario no dudes en contactarnos.",
+    "intro_p3": "En cuanto sepas que puedes venir te agradeceríamos que nos confirmes tu asistencia para ayudarnos con la organización (ya tienes nuestros contactos, pero si lo prefieres puedes hacerlo por mail a confirmación@sergio-y-silvia.com o usando este formulario). ¡Gracias!",
+    "place_p1": "La celebración de la ceremonia, el banquete y la fiesta posterior tendrán todos lugar el 14 de Septiembre en Miravalle (Guadarrama). La ceremonia comenzará a las 20:00 en el jardín de la cascada, seguida de un cóctel en el mismo jardín. Hacia las 21:30 entraremos al salón El Escorial donde tendrá lugar el banquete. Más tarde (a más tardar a las 01:00) entraremos a la discoteca, donde podréis bailar durante 4 horas.",
+    "place_p2": "Para la boda hemos elegido una temática Disney, lo cual no significa que tengas que venir con un disfraz. La temática se reflejará en la decoración y en otros elementos (como el \"Reserva la fecha\" que habrás recibido).",
+    "moreInfo_p1": " Miravalle tiene fácil acceso en coche, y con parking en el lugar. Para llegar desde Madrid basta con coger la A-6, coger la salida 42 hacia la N-VI y pasado Collado Villalba en la segunda rotonda a la izquierda, coger la carretera en dirección al Valle de los Caídos. Miravalle se encuentra justo al lado de la salida de la rotonda, con una tinaja enorme que marca la entrada. Para llegar en el otro sentido, ven por la N-VI y una vez pasado Guadarrama la primera rotonda que te encuentres será la que tiene el desvío al Valle de los Caídos.",
+    "moreInfo_p2": " Si no vas a ir por tus propios medios habíamos pensado contratar un autocar para llevarte desde el centro de Madrid hasta el sitio, y luego de vuelta. Si prefieres esta opción, háznoslo saber cuanto antes para saber cuánta gente estaría interesada cuando contactemos a la empresa de autocares.",
+    "gifts_p1": " Ya nos han preguntado por este tema alguna vez. Viendo que llevamos viviendo juntos más de dos años, tenemos todo lo que necesitamos ahora mismo ya que lo hemos ido comprando según ha ido surgiendo la necesidad. Por otro lado, cualquier regalo tendría que quedarse con nuestros padres ya que nosotros tendremos que volver a París y no podríamos llevárnoslos con nosotros. Por este motivo para nosotros es suficiente regalo el teneros con nosotros el día de nuestra boda y poder disfrutar de él juntos. Sin embargo, si de verdad quieres hacernos un regalo material, algo de dinero nos ayudaría a financiar el viaje de novios."
 }
