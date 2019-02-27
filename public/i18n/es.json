@@ -1,9 +1,10 @@
 {
-    "titleIntro": "Bienvenido",
-    "titlePlace": "La Celebración",
-    "titleMoreInfo": "Más Información",
-    "titleGifts": "Lista de Boda",
-    "Welcome": "Hola, bienvenido a mi página",
-    "Language": "Por favor, elige un idioma",
-    "Contact Information": "1 Elf rd, Mi CASA, Earth"
+	"titleIntro": "Bienvenido",
+	"titlePlace": "La Celebración",
+	"titleMoreInfo": "Más Información",
+	"titleGifts": "Lista de Boda",
+	"Welcome": "Hola, bienvenido a mi página",
+	"Language": "Por favor, elige un idioma",
+	"Contact Information": "1 Elf rd, Mi CASA, Earth",
+	"titleHeader": "titleHeader"
 }
