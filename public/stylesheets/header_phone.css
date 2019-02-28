@@ -55,6 +55,7 @@
         padding-top: 15vh;        
         width: 75vw;
         box-shadow: -5px 0px 10px black;
+        z-index:1;
     }
     
     .logo {
@@ -80,6 +81,7 @@
     .menu-mobile-options.active ~ .navbar-toggle {
         color: black;
         position: fixed;
+        z-index: 1;
     }
 
     .menu-mobile .menu-title h1{
@@ -100,6 +102,7 @@
         position: fixed;
         bottom: 1em;
         right: 1em;
+        z-index: 1;
     }
 
     .lang a {
