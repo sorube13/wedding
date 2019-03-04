@@ -1,53 +1,52 @@
 @media only screen and (min-width: 767px) {
-    .header .menu-web{
-        display: flex;
-        justify-content: space-evenly;
-        /* padding-left: 20%;
-        padding-right: 20%; */
-        height: 11em;
-        align-items: center;
+    .header {
+        margin-top: 2.5em;
     }
 
-    .header .menu-mobile{
+    .header .menu-web{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 5% 10% 25% 48% 7% 5%;
+    }
+    .header .menu-mobile {
         display: none;
     }
-    .header .menu-web a {
-        color: white;
+    .menu-web .logo {
+        grid-column-start: 2; 
+    }
+
+    .menu-web-options {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        display: flex;
+        justify-content: space-evenly;
+        height: 2.5em;
+    }
+
+    .menu-web-options a:last-child{
+        border-right: 1px solid #1E1E1E;
+        padding-right: 2em;
+    }
+
+    .menu-web-options a {
+        padding: 0.5em;
+        color: #1E1E1E;
         text-decoration: none;
-        font-family: 'Great Vibes', cursive;
-        font-weight: normal;
-        font-style: normal; 
-        font-size:2em;
-        letter-spacing: 0.08em;
-        text-align: center;
-        padding-left: 1em;
-        padding-right: 1em;
     }
 
     .header .menu-web a.selected {
-        border-bottom: 1px white solid;
-    }
+        border-bottom: 1px #1E1E1E solid;
+}
 
-    .header .menu-web img {
-        border: 1px solid white;
-        border-radius: 500px;
-        -webkit-border-radius: 500px;
-        -moz-border-radius: 500px;
+    #choose-lang {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2.5em;
     }
-
-    .lang { 
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding-top: 3vh;
-        display: block;
-    }
-
-    .lang a {
-        padding: 0.6em;     
-    }
-
-    .lang img {
+    #choose-lang img {
         width: 1.5em;
     }
 }
