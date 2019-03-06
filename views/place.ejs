@@ -7,16 +7,11 @@
     <div class='layer'>
         <%- include header.ejs %>
         <div id="place" class='body-content'>
-            <div class='map-content' id='map'>
-                <%- include map.ejs %>
-            </div>
             <div class='place-text'>
-                <p>
-                    <%=i18n.__("place_p1")%>
-                </p>
-                <p>
-                    <%=i18n.__("place_p2")%>
-                </p>
+                <%-i18n.__("place")%>
+            </div>
+            <div class='intro-pic'>
+                <img src="images/wedding_landing_pagmockup.jpg" alt="place-img">
             </div>
         </div>
 

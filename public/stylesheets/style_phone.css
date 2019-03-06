@@ -9,26 +9,50 @@
     }
     .layer {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
-        height: auto;
-    .body-content{
-        margin: 3em 3em;
-        color: white;
-        text-align: justify; 
-        line-height: 1.5em;
+        height: 100vh;
+        overflow: auto; 
+        background: -webkit-linear-gradient(top, rgba(151,150,240, 0.98) 0%, rgba(251,199,212, 0.92) 100%), url('../images/castle.jpg') no-repeat;
+        background-size: cover; 
+   
     }
 
+    .body-content{
+        margin: 3em 3em;
+        color: #1E1E1E;
+        text-align: justify;
+        line-height: 1.5em;
+        font-weight: bold;
+        text-indent: 3em;
+    }
 
-  #place #map {
+    #intro .intro-pic {
+        text-align: center;
+        margin-top: 4em;
+    }
+    #intro .intro-pic img{
+        width: 90%;
+    }
+
+    #place .intro-pic {
+        display: flex;
+        margin-top: 4em;
+    }
+    #place .intro-pic img{
+        width: 90%;
+    }
+
+  #moreInfo #map {
     position: relative;
     overflow: hidden;
     width: 77vw;
     height: 20em;
+    margin-bottom: 4em;
   } 
 
-  #place #map .map-iframe {
+  #moreInfo #map .map-iframe {
     position: absolute;
     top: 0;
     left: 0;

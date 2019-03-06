@@ -1,6 +1,9 @@
 <nav class='header'>
     <div class='menu-web'>
-        <img class='logo' src="images/base_logo.svg" alt="Logo" height="100" width="100">
+        <div class='logo'>
+            <img class='base-logo' src="images/base_logo.svg" alt="Logo" height="100" width="100">
+            <img class='blob-logo' src="images/blob_logo.svg" alt="Logo" height="100" width="100">
+        </div>
         <div class='menu-web-options'>
             <a id="lnkHome" <% if (page_name==='intro' ) { %>class="selected"
                 <% } %> href="/">
@@ -28,7 +31,8 @@
 
     <div class='menu-mobile'>
         <div class='logo'>
-            <img src="images/logo.png" alt="Logo" height="100" width="100">
+            <img class='base-logo' src="images/base_logo.svg" alt="Logo" height="100" width="100">
+            <img class='blob-logo' src="images/blob_logo.svg" alt="Logo" height="100" width="100">
         </div>
         <div class='menu-title'>
             <h1>
@@ -49,6 +53,14 @@
                 <% } %> href="/gifts">
                 <%=i18n.__('titleGifts')%></a>
         </div>
+        <div class='lang' id='choose-lang-mobile'>
+            <% if (i18n.getLocale()!=='es') { %><a href='/es'><img src="images/es.png" alt="es"></a>
+            <% }%>
+            <% if (i18n.getLocale()!=='fr') { %><a href='/fr'><img src="images/fr.png" alt="fr"></a>
+            <% }%>
+            <% if (i18n.getLocale()!=='en') { %><a href='/en'><img src="images/en.png" alt='en'></a>
+            <% }%>
+        </div>
         <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="material-icons">menu</i>
         </span>
@@ -60,7 +72,7 @@
 </nav>
 <script>
     let mainNav = document.getElementById('js-menu');
-    let langMenu = document.getElementById('choose-lang');
+    let langMenu = document.getElementById('choose-lang-mobile');
     let navBarToggle = document.getElementById('js-navbar-toggle');
     navBarToggle.addEventListener('click', function () {
         mainNav.classList.toggle('active');

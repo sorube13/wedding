@@ -11,16 +11,18 @@
         margin-left: auto;
         margin-right: auto;
         width: 25vw;
+        text-align: center;
     
     }
 
-    .header .menu-mobile img {
-        border: 1px solid white;
-        border-radius: 500px;
-        -webkit-border-radius: 500px;
-        -moz-border-radius: 500px;
+    .header .menu-mobile .logo .blob-logo {
+        position: relative;
     }
 
+    .header .menu-mobile .logo .base-logo {
+        position: absolute;
+        z-index:1;
+    }
     .menu-mobile-options:not(.active)  {
         display: none !important;
     }
@@ -86,7 +88,7 @@
 
     .menu-mobile .menu-title h1{
         text-align: center;
-        color: white;
+        color: #1E1E1E;;
         font-family: 'Great Vibes', cursive;
         font-size: 2.5em;
         letter-spacing: 0.08em;

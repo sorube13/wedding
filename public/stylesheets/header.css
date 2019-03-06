@@ -6,7 +6,7 @@
     .header .menu-web{
         display: grid;
         justify-content: space-between;
-        grid-template-columns: 5% 10% 25% 48% 7% 5%;
+        grid-template-columns: 5% 10% 24% 48% 8% 5%;
     }
     .header .menu-mobile {
         display: none;
@@ -15,18 +15,24 @@
         grid-column-start: 2; 
     }
 
+    .header .menu-web .logo .blob-logo {
+        position: relative;
+    }
+
+    .header .menu-web .logo .base-logo {
+        position: absolute;
+        z-index:1;
+    }
+
     .menu-web-options {
         grid-column-start: 4;
         grid-column-end: 5;
         display: flex;
         justify-content: space-evenly;
         height: 2.5em;
+        border-right: 1px solid #1E1E1E;
     }
 
-    .menu-web-options a:last-child{
-        border-right: 1px solid #1E1E1E;
-        padding-right: 2em;
-    }
 
     .menu-web-options a {
         padding: 0.5em;
@@ -45,6 +51,7 @@
         justify-content: space-between;
         align-items: center;
         height: 2.5em;
+        padding-left: 2em;
     }
     #choose-lang img {
         width: 1.5em;

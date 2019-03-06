@@ -24,9 +24,10 @@
 
   .body-content{
     margin: 5em 5em;
-    color: black;
+    color: #1E1E1E;
     text-align: justify;
     line-height: 1.5em;
+    text-indent: 3em;
   }
   
   #intro {
@@ -39,19 +40,40 @@
     display: flex;
     justify-content: center;
   }
-  
+
   #place {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
-  #place #map {
+
+  #place .place-text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #place .intro-pic {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+  }
+
+  #place .intro-pic img {
+    height: 25em;
+  }
+  
+  #moreInfo {
+    display: flex;
+    
+  }
+  #moreInfo #map {
     position: relative;
     overflow: hidden;
     width: 180vw;
     height: 25em;
   } 
 
-  #place #map .map-iframe {
+  #moreInfo #map .map-iframe {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -60,8 +82,19 @@
     border: 0;
   }
 
-  #place .place-text {
+  #moreInfo .moreInfo-text {
     padding-left: 3em;
+  }
+
+  #gifts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  #gifts .gifts-pic {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
   }
 
   

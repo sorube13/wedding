@@ -7,12 +7,12 @@
     <div class='layer'>
         <%- include header.ejs %>
         <div id="moreInfo" class='body-content'>
-            <p>
-                <%=i18n.__("moreInfo_p1")%>
-            </p>
-            <p>
-                <%=i18n.__("moreInfo_p2")%>
-            </p>
+            <div class='map-content' id='map'>
+                <%- include map.ejs %>
+            </div>
+            <div class='moreInfo-text'>
+                <%-i18n.__("moreInfo")%>
+            </div>
         </div>
 
 
