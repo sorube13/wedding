@@ -1,6 +1,6 @@
 @media only screen and (min-width: 767px) {
     .header {
-        margin-top: 2.5em;
+        margin-top: 5vh;
     }
 
     .header .menu-web{
@@ -29,7 +29,7 @@
         grid-column-end: 5;
         display: flex;
         justify-content: space-evenly;
-        height: 2.5em;
+        height: 5vh;
         border-right: 1px solid #1E1E1E;
     }
 
@@ -50,7 +50,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 2.5em;
+        height: 5vh;
         padding-left: 2em;
     }
     #choose-lang img {

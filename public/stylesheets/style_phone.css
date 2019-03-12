@@ -12,7 +12,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         overflow: auto; 
         background: -webkit-linear-gradient(top, rgba(151,150,240, 0.98) 0%, rgba(251,199,212, 0.92) 100%), url('../images/castle.jpg') no-repeat;
         background-size: cover; 
@@ -22,6 +22,9 @@
     .body-content{
         margin: 3em 3em;
         color: #1E1E1E;
+    }
+
+    .body-content p {
         text-align: justify;
         line-height: 1.5em;
         font-weight: bold;
@@ -34,14 +37,21 @@
     }
     #intro .intro-pic img{
         width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #place .intro-pic {
-        display: flex;
+        text-align: center;
         margin-top: 4em;
+        
     }
     #place .intro-pic img{
         width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
   #moreInfo #map {
@@ -59,6 +69,19 @@
     width: 100%;
     height: 100%;
     border: 0;
+  }
+
+  #gifts .gifts-pic  {
+    text-align: center;
+    margin-top: 4em;
+    
+}
+
+  #gifts .gifts-pic img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
     
 }
