@@ -42,6 +42,18 @@ router.get('/rsvp', function (req, res, next) {
   res.render('rsvp', content)
 })
 
+router.post('/rsvp/contact', function (req, res, next) {
+  console.log('req name:', req.body.guest_name)
+  console.log('req email:', req.body.guest_email)
+  console.log('req comment:', req.body.comment)
+  var content = {
+    page_name: 'rsvp',
+    page_title: 'RSVP',
+    i18n
+  }
+  res.render('rsvp', content)
+})
+
 router.get('/gifts', function (req, res, next) {
   var content = {
     page_name: 'gifts',

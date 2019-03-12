@@ -7,16 +7,19 @@
         <div class='menu-web-options'>
             <a id="lnkHome" <% if (page_name==='intro' ) { %>class="selected"
                 <% } %> href="/">
-                <%=i18n.__('titleIntro')%></a></a>
+                <%=i18n.__('titleIntro')%></a>
             <a id="lnkLoc" <% if (page_name==='place' ) { %>class="selected"
                 <% } %> href="/place">
-                <%=i18n.__('titlePlace')%></a></a>
+                <%=i18n.__('titlePlace')%></a>
             <a id="lnkInfo" <% if (page_name==='moreInfo' ) { %>class="selected"
                 <% } %> href="/moreInfo">
-                <%=i18n.__('titleMoreInfo')%></a></a>
+                <%=i18n.__('titleMoreInfo')%></a>
             <a id="lnkGifts" <% if (page_name==='gifts' ) { %>class="selected"
                 <% } %> href="/gifts">
-                <%=i18n.__('titleGifts')%></a></a>
+                <%=i18n.__('titleGifts')%></a>
+            <a id="lnkRsvp" <% if (page_name==='rsvp' ) { %>class="selected"
+                <% } %> href="/rsvp">
+                <%=i18n.__('titleRsvp')%></a>
         </div>
         <div class='lang' id='choose-lang'>
             <% if (i18n.getLocale()!=='es') { %><a href='/es'><img src="images/es.png" alt="es"></a>
@@ -52,6 +55,9 @@
             <a id="lnkGifts" <% if (page_name==='gifts' ) { %>class="selected"
                 <% } %> href="/gifts">
                 <%=i18n.__('titleGifts')%></a>
+            <a id="lnkRsvp" <% if (page_name==='rsvp' ) { %>class="selected"
+                <% } %> href="/rsvp">
+                <%=i18n.__('titleRsvp')%></a>
         </div>
         <div class='lang' id='choose-lang-mobile'>
             <% if (i18n.getLocale()!=='es') { %><a href='/es'><img src="images/es.png" alt="es"></a>
