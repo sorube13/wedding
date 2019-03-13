@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1920px) and (max-width: 2560px) {
+    .header {
+        margin-top: 5vh;
+    }
+    .header .menu-web {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 5% 10% 24% 48% 8% 5%;
+    }
+    .header .menu-mobile {
+        display: none;
+    }
+    .menu-web .logo {
+        grid-column-start: 2;
+    }
+    .header .menu-web .logo .blob-logo {
+        position: relative;
+    }
+    .header .menu-web .logo .base-logo {
+        position: absolute;
+        z-index: 1;
+    }
+    .menu-web-options {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        display: flex;
+        justify-content: space-evenly;
+        height: 5vh;
+        border-right: 1px solid #1E1E1E;
+    }
+    .menu-web-options a {
+        padding: 0.5em;
+        color: #1E1E1E;
+        text-decoration: none;
+    }
+    .header .menu-web a.selected {
+        border-bottom: 1px #1E1E1E solid;
+    }
+    #choose-lang {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5vh;
+        padding-left: 2em;
+    }
+    #choose-lang img {
+        width: 1.5em;
+    }
+}
