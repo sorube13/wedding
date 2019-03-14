@@ -1,11 +1,10 @@
 @media only screen and (min-width: 1920px) and (max-width: 2560px) {
     body {
         padding: 50px;
-        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
         font-family: 'Raleway', sans-serif;
     }
     .layer {
-        //background: #E9C2DD;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -13,18 +12,19 @@
         height: 100vh;
         overflow: auto;
         background: -webkit-linear-gradient(top, rgba(151, 150, 240, 0.98) 0%, rgba(251, 199, 212, 0.92) 100%), url('../images/castle.jpg') no-repeat;
-        background-size: cover; // #fbc7d4 #9796f0  rgb(251,199,212) rgb(151,150,240)
-        // #654ea3 #eaafc8 rgb(101,78,163) 
-        //rgb(234,175,200)
+        background-size: cover;
     }
     .body-content {
         margin: 5em 5em;
         color: #1E1E1E;
+        height: calc(85% - 15em);
     }
-    .body-content p {
+    .body-content p,
+    .body-content ul li {
         text-align: justify;
         line-height: 1.5em;
         text-indent: 3em;
+        padding-bottom: 1.5em;
     }
     #intro {
         display: grid;
@@ -38,6 +38,9 @@
         grid-column: 2/3;
         display: flex;
         justify-content: center;
+    }
+    #intro .intro-pic img {
+        height: 550px;
     }
     #place {
         display: grid;
@@ -63,7 +66,7 @@
         position: relative;
         overflow: hidden;
         width: 180vw;
-        height: 25em;
+        height: 30em;
     }
     #moreInfo #map .map-iframe {
         position: absolute;
