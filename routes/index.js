@@ -54,19 +54,19 @@ router.get('/gifts', function (req, res, next) {
 router.get('/es', function (req, res, next) {
   i18n.setLocale('es')
   res.cookie('i18n', 'es')
-  res.redirect('/')
+  res.redirect('back')
 })
 
 router.get('/fr', function (req, res, next) {
   i18n.setLocale('fr')
   res.cookie('i18n', 'fr')
-  res.redirect('/')
+  res.redirect('back')
 })
 
 router.get('/en', function (req, res, next) {
   i18n.setLocale('en')
   res.cookie('i18n', 'en')
-  res.redirect('/')
+  res.redirect('back')
 })
 
 module.exports = router
