@@ -1,8 +1,9 @@
 @media only screen and (min-width: 1920px) and (max-width: 2560px) {
     body {
         padding: 50px;
-        font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
-        font-family: 'Raleway', sans-serif;
+        /* font: 18px 'Raleway',
+sans-serif; */
+        font: 20px 'Alegreya', serif;
     }
     .layer {
         position: absolute;
