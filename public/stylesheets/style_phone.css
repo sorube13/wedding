@@ -1,9 +1,7 @@
 @media only screen and (max-width: 767px) {
-    
     body {
         /* The file size of this background image is 93% smaller
            to improve page load speed on mobile internet connections */
-       
         overflow-x: hidden;
         font-family: 'Raleway', sans-serif;
     }
@@ -13,75 +11,63 @@
         left: 0;
         width: 100%;
         height: 100%;
-        overflow: auto; 
-        background: -webkit-linear-gradient(top, rgba(151,150,240, 0.98) 0%, rgba(251,199,212, 0.92) 100%), url('../images/castle.jpg') no-repeat;
-        background-size: cover; 
-   
+        overflow: auto;
+        background: -webkit-linear-gradient(top, rgba(151, 150, 240, 0.98) 0%, rgba(251, 199, 212, 0.92) 100%), url('../images/castle.jpg') no-repeat;
+        background-size: cover;
     }
-
-    .body-content{
+    .body-content {
         margin: 3em 3em;
         color: #1E1E1E;
     }
-
     .body-content p {
         text-align: justify;
         line-height: 1.5em;
         font-weight: bold;
         text-indent: 3em;
     }
-
     #intro .intro-pic {
         text-align: center;
         margin-top: 4em;
     }
-    #intro .intro-pic img{
+    #intro .intro-pic img {
         width: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
-    #place .intro-pic {
+    #place .place-pic {
         text-align: center;
         margin-top: 4em;
-        
     }
-    #place .intro-pic img{
+    #place .place-pic img {
         width: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
-  #moreInfo #map {
-    position: relative;
-    overflow: hidden;
-    width: 77vw;
-    height: 20em;
-    margin-bottom: 4em;
-  } 
-
-  #moreInfo #map .map-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-
-  #gifts .gifts-pic  {
-    text-align: center;
-    margin-top: 4em;
-    
-}
-
-  #gifts .gifts-pic img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-    
+    #moreInfo #map {
+        position: relative;
+        overflow: hidden;
+        width: 77vw;
+        height: 20em;
+        margin-bottom: 4em;
+    }
+    #moreInfo #map .map-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    #gifts .gifts-pic {
+        text-align: center;
+        margin-top: 4em;
+    }
+    #gifts .gifts-pic img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
 }
