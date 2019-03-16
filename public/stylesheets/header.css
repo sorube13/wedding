@@ -29,12 +29,14 @@
         grid-column-end: 5;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         height: 5vh;
         border-right: 1px solid #1E1E1E;
     }
 
 
     .menu-web-options a {
+        font: 20px 'Open Sans Condensed', sans-serif;
         padding: 0.5em;
         color: #1E1E1E;
         text-decoration: none;

@@ -24,8 +24,10 @@ sans-serif; */
     .body-content ul li {
         text-align: justify;
         line-height: 1.5em;
-        text-indent: 3em;
         padding-bottom: 1.5em;
+    }
+    .body-content p {
+        text-indent: 3em;
     }
     #intro {
         display: grid;

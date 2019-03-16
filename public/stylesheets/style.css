@@ -1,8 +1,7 @@
 @media only screen and (min-width: 767px) {
     body {
         padding: 50px;
-        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-        font-family: 'Raleway', sans-serif;
+        font: 16px 'Alegreya', serif;
     }
     .layer {
         position: absolute;
@@ -15,12 +14,17 @@
         background-size: cover;
     }
     .body-content {
-        margin: 5em 5em;
+        margin: 4em 5em;
         color: #1E1E1E;
+        margin-bottom: 1em;
     }
-    .body-content p {
+    .body-content p,
+    .body-content ul li {
         text-align: justify;
         line-height: 1.5em;
+        padding-bottom: 0.5em;
+    }
+    .body-content p {
         text-indent: 3em;
     }
     #intro {
@@ -31,11 +35,12 @@
         margin-right: 4em;
     }
     #intro .intro-pic {
-        margin-top: -5em;
+        margin-top: -3em;
         grid-column: 2/3;
         display: flex;
         justify-content: center;
     }
+    
     #place {
         display: grid;
         grid-template-columns: 50% 50%;
