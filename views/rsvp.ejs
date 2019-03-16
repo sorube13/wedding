@@ -10,17 +10,45 @@
             <div class='rsvp-text'>
                 <%-i18n.__("rsvpInfo")%>
             </div>
-            <div class='rsvp-form'>
+            <div class='rsvp-form2'>
                 <form id="rsvpform" name="rsvpform" method="POST" action="/rsvp/contact">
-                    <label for="guest_name">Enter name: </label>
+                    <label for="guest_name">
+                        <%=i18n.__("rsvpName")%></label>
                     <input id="guest_name" type="text" name="guest_name" placeholder="Silvia Orube">
-                    <label for="guest_email">Enter e-mail: </label>
+                    <label for="guest_email">
+                        <%=i18n.__("rsvpEmail")%></label>
                     <input id="guest_email" type="text" name="guest_email" placeholder="confirmacion@sergio-y-silvia.com">
-                    <label for="nb_guest">Enter name: </label>
+                    <label for="nb_guest">
+                        <%=i18n.__("rsvpNbGuest")%></label>
                     <input id="nb_guest" type="number" name="nb_guest" value="1" min="0" max="10">
-                    <label for="guest_question">Información: </label>
-                    <textarea rows="4" cols="50" name="comment" form="rsvpform" placeholder='<%=i18n.__("Welcome")%>'></textarea>
-                    <input type="submit" value="OK">
+                    <label for="guest_question">
+                        <%=i18n.__("rsvpComment")%></label>
+                    <textarea rows="4" cols="50" name="comment" form="rsvpform" placeholder='<%=i18n.__("rsvpCommentPlaceholder")%>'></textarea>
+                    <input type="submit" id='submitRsvp' value="OK">
+                </form>
+            </div>
+
+            <div class='rsvp-form'>
+                <form class="gform pure-form pure-form-stacked" method="POST" action="https://script.google.com/macros/s/AKfycbyCxWM9pJ0NErqUS9Gdm1HB6xj3aTKNgrmmi1kzyE6oL_9pjX4/exec">
+                    <label for="guest_name">
+                        <%=i18n.__("rsvpName")%></label>
+                    <input id="guest_name" type="text" name="guest_name" placeholder="Silvia Orube">
+                    <label for="guest_email">
+                        <%=i18n.__("rsvpEmail")%></label>
+                    <input id="guest_email" type="text" name="guest_email" placeholder="confirmacion@sergio-y-silvia.com">
+                    <label for="nb_guest">
+                        <%=i18n.__("rsvpNbGuest")%></label>
+                    <input id="nb_guest" type="number" name="nb_guest" value="1" min="0" max="10">
+                    <label for="guest_question">
+                        <%=i18n.__("rsvpComment")%></label>
+                    <textarea rows="4" cols="50" name="comment" form="rsvpform" placeholder='<%=i18n.__("rsvpCommentPlaceholder")%>'></textarea>
+                    <input type="submit" id='submitRsvp' value="OK">
+
+                    <div style="display:none" class="thankyou_message">
+                        <!-- You can customize the thankyou message by editing the code below -->
+                        <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                        </h2>
+                    </div>
                 </form>
             </div>
         </div>
@@ -28,6 +56,7 @@
 
     </div>
 
+    <!-- <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script> -->
 </body>
 
 </html>

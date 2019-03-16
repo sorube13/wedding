@@ -1,7 +1,9 @@
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1920px) and (max-width: 2560px) {
     body {
         padding: 50px;
-        font: 16px 'Alegreya', serif;
+        /* font: 18px 'Raleway',
+sans-serif; */
+        font: 20px 'Alegreya', serif;
     }
     .layer {
         position: absolute;
@@ -16,13 +18,13 @@
     .body-content {
         margin: 4em 5em;
         color: #1E1E1E;
-        margin-bottom: 1em;
+        height: calc(85% - 15em);
     }
     .body-content p,
     .body-content ul li {
         text-align: justify;
         line-height: 1.5em;
-        padding-bottom: 0.5em;
+        padding-bottom: 1.5em;
     }
     .body-content p {
         text-indent: 3em;
@@ -40,7 +42,9 @@
         display: flex;
         justify-content: center;
     }
-    
+    #intro .intro-pic img {
+        height: 550px;
+    }
     #place {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -65,7 +69,7 @@
         position: relative;
         overflow: hidden;
         width: 180vw;
-        height: 25em;
+        height: 30em;
     }
     #moreInfo #map .map-iframe {
         position: absolute;
@@ -93,34 +97,26 @@
     }
 
     #rsvp {
-      display: grid;
-      grid-template-columns: 50% 50%;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
-  
+    
     #rsvp .rsvp-form {
-      grid-column: 2/3;
-      margin-left: 10%;
+        grid-column: 2/3;
+        margin-left: 10%;
     }
-  
+    
     #rsvp .rsvp-form form {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
-    #rsvp .rsvp-form form input,
-    #rsvp .rsvp-form form textarea{
-       margin-bottom: 1em;
-      }
-
-    #submitRsvp {
+    #rsvpSubmit {
         width: 30%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         color: black;
         background: #97c7d9;
-    }
-    .rsvp-form2 {
-        display: none;
     }
 }
