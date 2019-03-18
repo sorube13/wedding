@@ -4,7 +4,6 @@ var i18n = require('i18n')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 var session = require('express-session')
-var cors = require('cors')
 require('console-stamp')(console, 'yyyy-mm-dd HH:MM:ss')
 
 var indexRouter = require('./routes/index')
@@ -26,9 +25,6 @@ i18n.configure({
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
-
-app.use(cors())
-app.options('*', cors())
 
 app.all('/*', handleRedirect)
 
