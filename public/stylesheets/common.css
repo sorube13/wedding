@@ -1,0 +1,7 @@
+#honeypot, #honeypot-fieldset {
+    display: none; /*makes the field not visible to humans*/
+}
+
+fieldset:not(.comment-rsvp) {
+    height: 4em;
+}

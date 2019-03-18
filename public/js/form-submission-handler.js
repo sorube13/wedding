@@ -83,33 +83,48 @@
         return false
       }
     } else {
-      disableAllButtons(form)
+      // disableAllButtons(form)
       var url = form.action
       var xhr = new XMLHttpRequest()
-      xhr.open('POST', url)
-      xhr.withCredentials = true
-      xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
-      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-      xhr.onreadystatechange = function () {
-        console.log(xhr.status, xhr.statusText)
-        console.log(xhr.responseText)
-        form.reset()
-        var formElements = form.querySelector('.form-elements')
-        if (formElements) {
-          formElements.style.display = 'none' // hide form
-        }
-        var thankYouMessage = form.querySelector('.thankyou_message')
-        if (thankYouMessage) {
-          thankYouMessage.style.display = 'block'
-        }
+      if ('withCredentials' in xhr) {
+        xhr.open('POST', url, true)
+      } else if (typeof XDomainRequest !== 'undefined') {
+        xhr = new XDomainRequest()
+        xhr.open('POST', url)
+      } else {
+        xhr = null
       }
-      // url encode form data for sending as post data
-      var encoded = Object.keys(data)
-        .map(function (k) {
-          return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
-        })
-        .join('&')
-      xhr.send(encoded)
+      if (!xhr) {
+        throw new Error('CORS not supported')
+      } else {
+        // xhr.open('POST', url)
+        // xhr.withCredentials = true
+        // xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
+        xhr.setRequestHeader(
+          'Content-Type',
+          'application/x-www-form-urlencoded'
+        )
+        xhr.onreadystatechange = function () {
+          console.log(xhr.status, xhr.statusText)
+          console.log(xhr.responseText)
+          form.reset()
+          var formElements = form.querySelector('.form-elements')
+          if (formElements) {
+            formElements.style.display = 'none' // hide form
+          }
+          var thankYouMessage = document.getElementById('thankyou_message')
+          if (thankYouMessage) {
+            thankYouMessage.style.display = 'block'
+          }
+        }
+        // url encode form data for sending as post data
+        var encoded = Object.keys(data)
+          .map(function (k) {
+            return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+          })
+          .join('&')
+        xhr.send(encoded)
+      }
     }
   }
 
@@ -127,6 +142,14 @@
     var buttons = form.querySelectorAll('button')
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true
+    }
+    var input = form.querySelectorAll('input')
+    for (var i = 0; i < input.length; i++) {
+      input[i].disabled = true
+    }
+    var textarea = form.querySelectorAll('textarea')
+    for (var i = 0; i < textarea.length; i++) {
+      textarea[i].disabled = true
     }
   }
 })()

@@ -70,4 +70,15 @@
         margin-right: auto;
         width: 90%;
     }
+    .thankyou_message {
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        padding-top: .5em;
+    }
+    #rsvp .rsvp-form form label {
+        font-size: 12.5px;
+    }
+
+
 }
