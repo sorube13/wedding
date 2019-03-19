@@ -56,7 +56,7 @@ sans-serif; */
     #place .place-pic {
         grid-column: 1/2;
         grid-row: 1/2;
-        margin-left: 10%;
+        margin-left: 18%;
         margin-right: auto;
     }
     #place .place-pic img {
