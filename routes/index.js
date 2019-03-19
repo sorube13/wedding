@@ -42,32 +42,9 @@ router.get('/rsvp', function (req, res, next) {
   res.render('rsvp', content)
 })
 
-router.post('/rsvp/contact', function (req, res, next) {
-  console.log('req name:', req.body.guest_name)
-  console.log('req email:', req.body.guest_email)
-  console.log('req email:', req.body.nb_guest)
-  console.log('req comment:', req.body.comment)
-
-  var values = [
-    [
-      req.body.guest_name,
-      req.body.guest_email,
-      req.body.nb_guest,
-      req.body.comment
-    ]
-  ]
-  /* var params = {
-    range: 'Sheet1!A1:B1',
-    majorDimension: 'ROWS',
-    values: values
-  }
-  var xhr = new XMLHttpRequest()
-  xhr.open(
-    'PUT',
-    'https://sheets.googleapis.com/v4/spreadsheets/1RXXWqTvg9kcIFeCdZbuS9Ay6N3OO3bspYyNZKJIEIPU/values/Sheet1!A1:E1?valueInputOption=USER_ENTERED'
-  )
-  xhr.setRequestHeader('Authorization', 'Bearer ' + access_token)
-  xhr.send(JSON.stringify(params)) */
+router.get('/download/hotels', function (req, res) {
+  var file = __dirname + '/../public/documents/hotels.pdf'
+  res.download(file) // Set disposition and send it.
 })
 
 router.get('/gifts', function (req, res, next) {
