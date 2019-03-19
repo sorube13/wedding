@@ -95,28 +95,44 @@ sans-serif; */
     #gifts .gifts-pic img {
         height: 25em;
     }
-
     #rsvp {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    
     #rsvp .rsvp-form {
         grid-column: 2/3;
         margin-left: 10%;
     }
-    
     #rsvp .rsvp-form form {
         display: flex;
         flex-direction: column;
     }
-
-    #rsvpSubmit {
+    #rsvp .rsvp-form form input,
+    #rsvp .rsvp-form form textarea {
+        margin-bottom: 1em;
+    }
+    #submitRsvp {
         width: 30%;
         display: block;
         margin-left: auto;
         margin-right: auto;
         color: black;
         background: #97c7d9;
+    }
+    .thankyou_message {
+        width: 200%;
+        text-align: center;
+        font-size: 30px;
+        padding-top: .5em;
+    }
+    .pure-g fieldset {
+        width: 100%;
+    }
+    .pure-g label,
+    .pure-g input {
+        font: 20px 'Alegreya', serif;
+    }
+    fieldset:not(.comment-rsvp) {
+        height: 4em;
     }
 }
