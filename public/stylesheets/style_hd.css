@@ -1,8 +1,6 @@
 @media only screen and (min-width: 1920px) and (max-width: 2560px) {
     body {
         padding: 50px;
-        /* font: 18px 'Raleway',
-sans-serif; */
         font: 20px 'Alegreya', serif;
     }
     .layer {
@@ -16,7 +14,7 @@ sans-serif; */
         background-size: cover;
     }
     .body-content {
-        margin: 4em 5em;
+        margin: 5em 5em;
         color: #1E1E1E;
         height: calc(85% - 15em);
     }
