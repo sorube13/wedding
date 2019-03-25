@@ -6,7 +6,7 @@
     .header .menu-web{
         display: grid;
         justify-content: space-between;
-        grid-template-columns: 5% 10% 24% 48% 8% 5%;
+        grid-template-columns: 5% 10% 20% 52% 8% 5%;
     }
     .header .menu-mobile {
         display: none;
@@ -40,8 +40,12 @@
         padding: 0.5em;
         color: #1E1E1E;
         text-decoration: none;
+        text-align: center;
     }
-
+    
+    .menu-web-options a:last-of-type {
+        padding-right: 1em;
+     }
     .header .menu-web a.selected {
         border-bottom: 1px #1E1E1E solid;
 }

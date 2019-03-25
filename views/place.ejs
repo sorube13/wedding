@@ -11,7 +11,16 @@
                 <%-i18n.__("place")%>
             </div>
             <div class='place-pic'>
-                <img src="images/parchment.png" alt="place-img">
+                <% if (i18n.getLocale()==='es') { %>
+                <img src="images/parchment_spanish.png" alt="place-img">
+                <% }%>
+                <% if (i18n.getLocale()==='fr') { %>
+                <img src="images/parchment_french.png" alt="place-img">
+                <% }%>
+                <% if (i18n.getLocale()==='en') { %>
+                <img src="images/parchment_english.png" alt="place-img">
+                <% }%>
+
             </div>
         </div>
 
